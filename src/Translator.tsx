@@ -289,7 +289,6 @@ interface Language {
             <button
             onClick={() => {
                 handleSpeakText(patientText, doctorLanguage); // Speak the patient's original text in doctor's language
-                handleSpeakText(translatedPatientText, patientLanguage); // Speak the translated text in patient's language
             }}
             className="flex items-center gap-2 text-blue-500 mt-2"
             >
@@ -377,7 +376,6 @@ interface Language {
             <button
             onClick={() => {
                 handleSpeakText(doctorText, patientLanguage); // Speak the doctor's original text in patient's language
-                handleSpeakText(translatedDoctorText, doctorLanguage); // Speak the translated text in doctor's language
             }}
             className="flex items-center gap-2 text-blue-500 mt-2"
             >
