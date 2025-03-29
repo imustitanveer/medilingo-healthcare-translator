@@ -7,14 +7,15 @@ import {
   import { Textarea } from "@/components/ui/textarea";
   import { MdArrowDropDown } from "react-icons/md";
   import { MdMicNone } from "react-icons/md";
-  import { useState } from "react";
+  import { useState, useRef } from "react";
   import './App.css';
   import axios from "axios";
   import TranscriptView from "./TranscriptView";
   import { MdVolumeUp } from "react-icons/md";
   import { handleSpeakText } from './TranscriptView';
-  
-// Define the Language type
+
+
+  // Define the Language type
 interface Language {
     code: string;
     label: string;
@@ -29,6 +30,8 @@ interface Language {
     const [translatedDoctorText, setTranslatedDoctorText] = useState<string>('');
     const [isListeningPatient, setIsListeningPatient] = useState<boolean>(false);
     const [isListeningDoctor, setIsListeningDoctor] = useState<boolean>(false);
+
+    const micSoundRef = useRef(new Audio("/mic.mp3"));
   
     // Conversation history to store the patient and doctor conversation
     const [conversations, setConversations] = useState<any[]>([]);
@@ -103,6 +106,8 @@ interface Language {
   recognitionDoctor.lang = doctorLanguage;
 
   const handleMicClick = (speaker: 'patient' | 'doctor') => {
+    micSoundRef.current.currentTime = 0;
+    micSoundRef.current.play();
     if (speaker === 'patient') {
       if (isListeningPatient) {
         recognitionPatient.stop();
