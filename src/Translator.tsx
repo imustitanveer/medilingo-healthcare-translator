@@ -306,50 +306,41 @@ interface Language {
             {/* doctor title */}
             <div className="flex flex-row items-center gap-2">
             <svg
-                version="1.1"
-                id="Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 460 460"
-                xmlSpace="preserve"
-                fill="#000000"
-                className="w-10 h-10">
-                <g id="XMLID_822_">
-                    <path
-                    id="XMLID_823_"
-                    fill="#DA5B66"
-                    d="M230,0C102.974,0,0,102.975,0,230c0,105.312,70.781,194.089,167.364,221.364 l284.152-283.437C424.427,71.057,335.516,0,230,0z"
-                    />
-                    <path
-                    id="XMLID_824_"
-                    fill="#BD0A13"
-                    d="M460,230c0-21.509-2.962-42.326-8.484-62.073L399.589,116H80.411l-20,124 l119.181,119.181L130,414l37.364,37.364C187.278,456.987,208.287,460,230,460C357.026,460,460,357.025,460,230z"
-                    />
-                    <polygon id="XMLID_825_" fill="#82C8DB" points="171.159,46 230,46 240,79.212 230,112.425" />
-                    <polygon id="XMLID_826_" fill="#419EBE" points="288.841,46 230,46 230,112.425" />
-                    <polygon
-                    id="XMLID_827_"
-                    fill="#FFFFFF"
-                    points="180,46 130,46 130,46.411 60.411,116 60.411,240 110.411,240 110.411,136.711 130,117.122 130,414 230,414 240,263.212 230,112.425"
-                    />
-                    <polygon
-                    id="XMLID_828_"
-                    fill="#A3DDE9"
-                    points="330,46.411 330,46 278,46 230,112.425 230,414 330,414 330,117.122 349.589,136.711 349.589,240 399.589,240 399.589,116"
-                    />
-                    <rect id="XMLID_829_" x="270" y="260" width="60" height="70" fill="#62B3CD" />
-                    <rect id="XMLID_830_" x="130" y="260" width="60" height="70" fill="#D1EEF4" />
-                    <polygon
-                    id="XMLID_831_"
-                    fill="#D1EEF4"
-                    points="161.159,46 186.884,30.564 230,102.425 240,160.287 230,218.15 161.159,104.286 186.873,88.856"
-                    />
-                    <polygon
-                    id="XMLID_832_"
-                    fill="#62B3CD"
-                    points="298.841,46 273.116,30.564 230,102.425 230,218.15 298.841,104.286 273.127,88.856"
-                    />
-                </g>
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 460 460"
+              xmlSpace="preserve"
+              fill="none"
+              className="w-10 h-10"
+            >
+              <g id="XMLID_822_">
+                <polygon id="XMLID_825_" fill="#82C8DB" points="171.159,46 230,46 240,79.212 230,112.425" />
+                <polygon id="XMLID_826_" fill="#419EBE" points="288.841,46 230,46 230,112.425" />
+                <polygon
+                  id="XMLID_827_"
+                  fill="#FFFFFF"
+                  points="180,46 130,46 130,46.411 60.411,116 60.411,240 110.411,240 110.411,136.711 130,117.122 130,414 230,414 240,263.212 230,112.425"
+                />
+                <polygon
+                  id="XMLID_828_"
+                  fill="#A3DDE9"
+                  points="330,46.411 330,46 278,46 230,112.425 230,414 330,414 330,117.122 349.589,136.711 349.589,240 399.589,240 399.589,116"
+                />
+                <rect id="XMLID_829_" x="270" y="260" width="60" height="70" fill="#62B3CD" />
+                <rect id="XMLID_830_" x="130" y="260" width="60" height="70" fill="#D1EEF4" />
+                <polygon
+                  id="XMLID_831_"
+                  fill="#D1EEF4"
+                  points="161.159,46 186.884,30.564 230,102.425 240,160.287 230,218.15 161.159,104.286 186.873,88.856"
+                />
+                <polygon
+                  id="XMLID_832_"
+                  fill="#62B3CD"
+                  points="298.841,46 273.116,30.564 230,102.425 230,218.15 298.841,104.286 273.127,88.856"
+                />
+              </g>
             </svg>
             <h1 className="text-2xl text-white font-bold">Doctor</h1>
             </div>
