@@ -26,17 +26,17 @@ export default function TranscriptView({ conversations, patientLanguage, doctorL
   return (
     <>
       <div className="relative flex items-center my-4 px-4">
-        <span className="w-full border-t border-gray-300"></span>
+        <span className="w-full border-t border-slate-500"></span>
       </div>
       <h1 className="text-2xl font-bold text-white text-center pb-2">Transcript</h1>
       <div className="px-4">
-        <Card className="w-full mx-auto px-4 bg-slate-200">
+        <Card className="w-full mx-auto px-4 bg-slate-700/60 border-none text-white">
           <CardContent className="p-4">
-            <ScrollArea className="h-80 p-2 border rounded-lg">
+            <ScrollArea className="h-80 p-2 border-none rounded-lg">
               {conversations.map((conversation, index) => (
                 <div key={index} className="mb-4">
-                  <h2 className="text-lg text-gray-800 font-semibold">{conversation.speaker}:</h2>
-                  <div className="text-sm leading-relaxed">
+                  <h2 className="text-xs text-white/50 font-semibold">{conversation.speaker}</h2>
+                  <div className="text-lg leading-relaxed">
                     <p><strong>Original:</strong> {conversation.original}</p>
                     <p><strong>Translated:</strong> {conversation.translated}</p>
                   </div>

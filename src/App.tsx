@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="font-[Poppins] tracking-wide">
         < Translator />
       </div>
     </>

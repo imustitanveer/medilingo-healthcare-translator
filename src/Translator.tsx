@@ -268,7 +268,7 @@ interface Language {
             </div>
             <div className="flex flex-row items-center justify-between">
             <DropdownMenu>
-              <DropdownMenuTrigger className="text-white p-2 bg-slate-700 rounded-2xl my-2 px-4 flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-slate-500">
+              <DropdownMenuTrigger className="text-white p-2 bg-slate-700/40 rounded-2xl my-2 px-4 flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-slate-500">
                 {languages.find((lang) => lang.code === patientLanguage)?.label || 'Select Language'}
                 <MdArrowDropDown className="text-2xl pt-1" />
               </DropdownMenuTrigger>
@@ -281,12 +281,12 @@ interface Language {
               </DropdownMenuContent>
             </DropdownMenu>
             <MdMicNone
-              className={`text-4xl text-white bg-slate-600 p-2 rounded-full hover:cursor-pointer hover:bg-slate-500 ${isListeningPatient ? 'animate-pulse' : ''}`}
+              className={`text-4xl text-white bg-slate-700/60 p-2 rounded-full hover:cursor-pointer hover:bg-slate-600 ${isListeningPatient ? 'animate-pulse' : ''}`}
               onClick={() => handleMicClick('patient')}
             />
           </div>
           <Textarea
-            className="bg-slate-200 h-30"
+            className="bg-slate-700/60 h-30 text-white border-none text-lg"
             value={patientText}  // Will show the translated text when set
             readOnly
             />
@@ -355,7 +355,7 @@ interface Language {
             </div>
             <div className="flex flex-row items-center justify-between">
             <DropdownMenu>
-              <DropdownMenuTrigger className="text-white p-2 bg-slate-700 rounded-2xl my-2 px-4 flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-slate-500">
+              <DropdownMenuTrigger className="text-white p-2 bg-slate-700/40 rounded-2xl my-2 px-4 flex flex-row items-center gap-2 hover:cursor-pointer hover:bg-slate-500">
                 {languages.find((lang) => lang.code === doctorLanguage)?.label || 'Select Language'}
                 <MdArrowDropDown className="text-2xl pt-1" />
               </DropdownMenuTrigger>
@@ -368,12 +368,12 @@ interface Language {
               </DropdownMenuContent>
             </DropdownMenu>
             <MdMicNone
-              className={`text-4xl text-white bg-slate-600 p-2 rounded-full hover:cursor-pointer hover:bg-slate-500 ${isListeningDoctor ? 'animate-pulse' : ''}`}
+              className={`text-4xl text-white bg-slate-700/60 p-2 rounded-full hover:cursor-pointer hover:bg-slate-600 ${isListeningDoctor ? 'animate-pulse' : ''}`}
               onClick={() => handleMicClick('doctor')}
             />
           </div>
           <Textarea
-            className="bg-slate-200 h-30"
+            className="bg-slate-700/60 h-30 text-white border-none text-lg"
             value={doctorText}  // Will show the translated text when set
             readOnly
             />
