@@ -288,7 +288,7 @@ interface Language {
             {/* Speak Button for Patient's TextArea */}
             <button
             onClick={() => {
-                handleSpeakText(patientText, doctorLanguage); // Speak the patient's original text in doctor's language
+                handleSpeakText(translatedPatientText, doctorLanguage); // Speak the patient's original text in doctor's language
             }}
             className="flex items-center gap-2 text-blue-500 mt-2 hover:cursor-pointer hover:text-blue-400"
             >
@@ -375,7 +375,7 @@ interface Language {
             {/* Speak Button for Doctor's TextArea */}
             <button
             onClick={() => {
-                handleSpeakText(doctorText, patientLanguage); // Speak the doctor's original text in patient's language
+                handleSpeakText(translatedDoctorText, patientLanguage); // Speak the doctor's original text in patient's language
             }}
             className="flex items-center gap-2 text-blue-500 mt-2 hover:cursor-pointer hover:text-blue-400"
             >
