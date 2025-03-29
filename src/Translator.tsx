@@ -290,7 +290,7 @@ interface Language {
             onClick={() => {
                 handleSpeakText(patientText, doctorLanguage); // Speak the patient's original text in doctor's language
             }}
-            className="flex items-center gap-2 text-blue-500 mt-2"
+            className="flex items-center gap-2 text-blue-500 mt-2 hover:cursor-pointer hover:text-blue-400"
             >
             <MdVolumeUp className="text-xl" />
             <span>Speak</span>
@@ -377,7 +377,7 @@ interface Language {
             onClick={() => {
                 handleSpeakText(doctorText, patientLanguage); // Speak the doctor's original text in patient's language
             }}
-            className="flex items-center gap-2 text-blue-500 mt-2"
+            className="flex items-center gap-2 text-blue-500 mt-2 hover:cursor-pointer hover:text-blue-400"
             >
             <MdVolumeUp className="text-xl" />
             <span>Speak</span>
